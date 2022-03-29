@@ -14,6 +14,6 @@ public class Exercicio04 {
         System.out.print("Digite a quarta nota do aluno: ");
         double quartaNota = scanner.nextDouble();
         double media = (primeiraNota + segundaNota + terceiraNota + quartaNota) / 4;
-        System.out.println("A média do aluno foi: " + media);
+        System.out.printf("A média do aluno foi: %.2f", media);
     }
 }

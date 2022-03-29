@@ -12,7 +12,7 @@ public class Exercicio11 {
         System.out.print("Por fim, digite um número real qualquer: ");
         double numeroReal = scanner.nextDouble();
 
-        double primeiraConta = (numero1 * numero1) + (numero2 / 2);
+        int primeiraConta = (numero1 * 2) + (numero2 / 2);
         double segundaConta = (numero1 * 3) + numeroReal;
         double terceiraConta = Math.pow(numeroReal, 3);
 

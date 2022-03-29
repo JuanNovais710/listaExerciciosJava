@@ -8,6 +8,6 @@ public class Exercicio12 {
         System.out.print("Digite sua altura: ");
         double alturaPessoa = scanner.nextDouble();
         double pesoIdeal = 72.7 * alturaPessoa - 58.;
-        System.out.println("Seu peso ideal seria: " + pesoIdeal);
+        System.out.printf("Seu peso ideal seria: %.1f Kg", pesoIdeal);
     }
 }

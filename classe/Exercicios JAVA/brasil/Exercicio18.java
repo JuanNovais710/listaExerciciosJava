@@ -10,6 +10,7 @@ public class Exercicio18 {
         System.out.print("E a velocidade, em MBps, da conexão que está utilizando? ");
         double velocidadeInternet = scanner.nextDouble();
         double tempoDeDownload = tamanhoArquivo / (velocidadeInternet / 8) / 60;
-        System.out.println("O tempo necessário para download do arquivo é: " + tempoDeDownload + " minutos.");
+        System.out.printf("O tempo necessário para download do arquivo é: %.2f minutos.", tempoDeDownload);
+        scanner.close();
     }
 }

@@ -15,10 +15,10 @@ public class Exercicio13 {
 
         if (!masculino) {
             double pesoIdealFeminino = (62.1 * alturaPessoa) - 44.7;
-            System.out.println(nomePessoa + ", seu peso ideal seria: " + pesoIdealFeminino);
+            System.out.printf("%s, seu peso ideal seria: %.1f Kg", nomePessoa, pesoIdealFeminino);
         } else {
             double pesoIdealMasculino = (72.7 * alturaPessoa) - 58;
-            System.out.println(nomePessoa + ", seu peso ideal seria: " + pesoIdealMasculino);
+            System.out.printf("%s, seu peso ideal seria: %.1f Kg", nomePessoa, pesoIdealMasculino);
         }scanner.close();
     }
 }

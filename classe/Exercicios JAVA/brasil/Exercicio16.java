@@ -10,9 +10,9 @@ public class Exercicio16 {
         double areaCliente = scanner.nextDouble();
         double litroTinta = areaCliente / 3;
         double precoTinta = 80.0;
-        System.out.print("Nossa tinta é vendida em latas de 18 litros, que custam R$" + precoTinta + " cada.");
+        System.out.printf("Nossa tinta é vendida em latas de 18 litros, que custam R$ %.2f cada.", precoTinta);
         double quantidadeLatas =  (areaCliente / 18) / 3;
         double precoFinal = quantidadeLatas * precoTinta;
-        System.out.print("\nVocê precisará de: " + quantidadeLatas + " latas de tinta, totalizando: R$" + precoFinal);
+        System.out.printf("\nVocê precisará de: %.2f latas de tinta, totalizando: R$ %.2f", quantidadeLatas, precoFinal);
     }
 }

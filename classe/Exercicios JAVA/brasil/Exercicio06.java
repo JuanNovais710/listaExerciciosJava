@@ -9,7 +9,7 @@ public class Exercicio06 {
         double raioCirculo = scanner.nextDouble();
         double pi = 3.14;
         double areaCirculo = pi * (raioCirculo * raioCirculo);
-        System.out.println("A área do círculo calculada com o raio fornecido é: " + areaCirculo);
+        System.out.printf("A área do círculo calculada com o raio fornecido é: %.2f", areaCirculo);
 
 
 

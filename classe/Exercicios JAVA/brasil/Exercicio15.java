@@ -18,7 +18,8 @@ public class Exercicio15 {
         double salarioLiquido = salarioBruto - descontoINSS - descontoSindicato - descontoImpostoRenda;
 
         System.out.print("Seu salário bruto foi: R$" + salarioBruto);
-        System.out.print("\nVocê pagou:\n8% ao INSS: R$" + descontoINSS + ".\n");
+        System.out.print("\nVocê pagou:\n11% de Imposto de Renda: R$" + descontoImpostoRenda);
+        System.out.print("\n8% ao INSS: R$" + descontoINSS + ".\n");
         System.out.print("5% ao sindicato: R$" + descontoSindicato + ".\n");
         System.out.print("Seu salário líquido foi: R$" + salarioLiquido);
 
