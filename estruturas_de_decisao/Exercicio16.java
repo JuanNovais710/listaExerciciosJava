@@ -1,4 +1,4 @@
-package exercicios.python.brasil.estruturas_de_decisao;
+package exercicios.python.brasil.estruturas_de_decisao.exercicios.python.brasil.estruturas_de_decisao;
 
 import java.util.Scanner;
 
@@ -12,18 +12,18 @@ public class Exercicio16 {
         int variavelB = scanner.nextInt();
         System.out.print("Informe o valor de C: ");
         int variavelC = scanner.nextInt();
-        double valorDelta = Math.pow(variavelB, 2) - 4*variavelA*variavelC;
+        double valorDelta = (Math.pow(variavelB, 2)) - 4*variavelA*variavelC;
         boolean naoESegundoGrau = variavelA == 0;
 
         if(naoESegundoGrau)
             System.out.println("O valor de A é igual 0. Isso impede a equação de ser de 2º grau.");
-        if(valorDelta < 0)
+        else if(valorDelta < 0)
             System.out.print("O valor de delta é negativo. A equação não possui raízes reais.");
-        if(valorDelta == 0) {
-            double variavelX = (-variavelB + Math.sqrt(valorDelta)) / 2 * (variavelA);
-            double variavelXDois = (-variavelB - Math.sqrt(valorDelta)) / 2 * (variavelA);
+        else if(valorDelta == 0) {
+            double variavelX = -variavelB + Math.sqrt(valorDelta) / (2 * variavelA);
+            double variavelXDois = -variavelB - Math.sqrt(valorDelta) / (2 * variavelA);
             System.out.printf("A equação possui apenas uma raíz real: %.1f %.1f", variavelX, variavelXDois);
-        }if(valorDelta > 0) {
+        }else if(valorDelta > 0) {
             double variavelX;
             variavelX = (-variavelB + Math.sqrt(valorDelta)) / 2 * (variavelA);
             double variavelXDois = (-variavelB - Math.sqrt(valorDelta)) / 2 * (variavelA);

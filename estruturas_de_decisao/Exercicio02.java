@@ -1,4 +1,4 @@
-package exercicios.python.brasil.estruturas_de_decisao;
+package exercicios.python.brasil.estruturas_de_decisao.exercicios.python.brasil.estruturas_de_decisao;
 
 import java.util.Scanner;
 
